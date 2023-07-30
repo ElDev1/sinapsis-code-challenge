@@ -1,4 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
+import { Box, Stack } from '@mui/system';
 import { useNavigate } from "react-router-dom";
 
 import Navbar from '../components/Navbar'
@@ -14,10 +15,12 @@ const Home = () => {
   }
 
   return (
-    <header>
+    <Stack sx={{height:'100vh'}}>
       <Navbar avatar={user?.picture} userName={user?.name}/>
-      <ThumbnailGenerator />
-    </header>
+      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', height:'100%'}}>
+        <ThumbnailGenerator />
+      </Box>
+    </Stack>
   )
 }
 

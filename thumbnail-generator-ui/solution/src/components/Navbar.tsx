@@ -14,8 +14,8 @@ const Navbar = ({ avatar, userName }: Props) => {
 
   return (
     <Paper sx={{ backgroundColor: '#FFCACC', height: '100px', padding:'15px', boxShadow: 3}}>
-      <Stack direction='row' justifyContent='space-between' alignItems='center'>
-          <Typography color='#967E76' variant='h2'>Thumbnail generator</Typography>
+      <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{height: '100%'}}>
+          <img src='../../public/Donuts.png' height='100px'/>
           <Stack direction='row' alignItems='center' spacing={2}>
               <Box>
                 <Typography align='center' color='#967E76'>Welcome!</Typography>
