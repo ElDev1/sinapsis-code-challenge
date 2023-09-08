@@ -18,8 +18,6 @@ const ThumbnailGenerator = () => {
       const secondImage = await resizeFile(file, 160, 120)
       const thirdImage = await resizeFile(file, 120, 120)
 
-      console.log(thirdImage)
-
       const linkUrl1 = URL.createObjectURL(firstImage)
       const linkUrl2 = URL.createObjectURL(secondImage)
       const linkUrl3 = URL.createObjectURL(thirdImage)
