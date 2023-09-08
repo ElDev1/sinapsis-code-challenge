@@ -36,7 +36,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Auth0Provider 
       domain={domain} 
       clientId={clientId}
-      redirectUri={window.location.origin + '/home'}
+      authorizationParams={{
+      redirect_uri: window.location.origin + '/home'
+    }}
     >
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
